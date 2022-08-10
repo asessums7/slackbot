@@ -15,7 +15,7 @@ db = client.twitter
 # Authentication #
 ##################
 
-BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAAGQ0fgEAAAAA87SQdlArOGTXG%2F7k35BG6xNMUDc%3DFJrZoCJOVKdeGnHqsWFvo1YDrbJclm10Cv6ra0Whjz522VURcq"
+BEARER_TOKEN = os.getenv("BEARER TOKEN")
 
 client = tweepy.Client(bearer_token=BEARER_TOKEN, wait_on_rate_limit=True,)
 
